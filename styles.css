@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg {
+    background-image: url("images/bg.jpg");
+    min-height: 670px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-container,
+.welcome-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-container {
+    background-image: linear-gradient(0deg, rgba(19, 45, 70, 0.7), rgba(1, 195, 141, 0.7));
+    padding: 100px 200px;
+    border-radius: 20px;
+}
+
+.welcome-container2 {
+    background-image: linear-gradient(0deg, rgba(19, 45, 70, 0.1), rgba(1, 195, 141, 0.4));
+    padding: 70px 200px
+}
+
+.welcome,
+.welcome2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.welcome2 {
+    margin-top: -40px;
+}
+
+.text-header {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.name-input {
+    width: 75%;
+    padding: 13px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.name-input:focus {
+    background-color: #132d46;
+    color: #fff;
+}
+
+.submit-btn-name,
+.task-add-btn,
+.delete-checked,
+.delete-all {
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn-name {
+    background-color: #132d46;
+    padding: 10px 20px;
+}
+
+.task-add-btn {
+    background-color: #01c38d;
+    color: #000;
+    padding: 10px 20px;
+}
+
+.submit-btn-name:hover {
+    background-color: #0e2235;
+}
+
+.task-add-btn:hover,
+.delete-checked:hover,
+.delete-all:hover {
+    background-color: #00ad7c;
+}
+
+.submit-btn-name a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* todo.html */
+.bg2 {
+    background-color: #132d46;
+    color: #fff;
+}
+
+.task-add-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-add-inp {
+    width: 25%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.task-add-inp:focus {
+    background-color: #0c1d2d;
+    color: #fff;
+}
+
+.task-field {
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: rgba(12, 29, 45, 0.5);
+    width: 70%;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.inp-span,
+.sort-select {
+    background-color: #0c1d2d;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.search-task {
+    border: none;
+    outline: none;
+    background-color: rgba(1, 195, 141, 0);
+    color: #fff;
+}
+
+.other-option-container {
+    display: flex;
+    gap: 20px;
+}
+
+.delete-checked,
+.delete-all {
+    background-color: #01c38d;
+    color: #000;
+    padding: 10px 20px;
+}
+
+.sort-select {
+    border: none;
+    outline: none;
+}
+
+.task-container {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    background-image: linear-gradient(270deg, rgba(19, 45, 70, 1), rgba(9, 22, 34, 0.8));
+    border-radius: 10px;
+    padding: 40px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.task-row {
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(1, 195, 141, 0.8), rgba(0, 181, 130, 0.3));
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.task-row:hover {
+    background-color: #00ad7c;
+}
+
+/* Style for the custom checkbox */
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Style for the custom checkbox when checked */
+.custom-checkbox:checked {
+    background-color:#01c38d;
+    border-color: #0c1d2d;
+}
+
+.task-label {
+    flex: 0.9;
+}
+
+.custom-icon {
+    color: #fff;
+}
+
+.solo-dlt-btn,
+.edit-btn {
+    border: none;
+    background-color: #132d46;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.solo-dlt-btn:hover,
+.edit-btn:hover {
+    background-color: #0c1d2d;
+}
