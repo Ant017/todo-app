@@ -30,15 +30,15 @@
     <!-- Task field -->
     <div class="task-field" id="task-field-id">
         <!-- Options -->
-        <div class="options">
+        <div class="options" id="options-id">
             <div class="search-container">
                 <span class="inp-span">
                     <input type="text" class="search-task" placeholder="Search..." /><i class="bi bi-search"></i>
                 </span>
             </div>
-            <div class="other-option-container">
-                <button class="delete-checked">Delete completed tasks</button>
-                <button class="delete-all">Delete all</button>
+            <div class="other-option-container" id="other-option-container-id">
+                <button class="delete-checked" id="delete-checked-id">Delete completed tasks</button>
+                <button class="delete-all" id="delete-all-id">Delete all</button>
                 <select class="sort-select">
                     <option disabled selected value="">Sort according to--</option>
                     <option value="date">Date</option>
@@ -48,18 +48,12 @@
         </div>
         <!-- Tasks -->
         <div class="task-container" id="task-container-id">
-            <p id="no-task-message"></p>
-            <!-- Individual containers -->
-            <div class="task-row">
-                <input type="checkbox" class="custom-checkbox"/>
-                <label class="task-label">Task 1</label>
-                <button class="edit-btn"><i class="bi bi-pencil-square custom-icon"></i></button>
-                <button class="solo-dlt-btn"><i class="bi bi-x-circle custom-icon"></i></button>
-            </div>
+            <div id="no-task-message"></div>
             <!-- Individual containers -->
             <!-- <div class="task-row">
                 <input type="checkbox" class="custom-checkbox"/>
                 <label class="task-label">Task 2</label>
+                <p class="task-date"></p>
                 <button class="edit-btn"><i class="bi bi-pencil-square custom-icon"></i></button>
                 <button class="solo-dlt-btn"><i class="bi bi-x-circle custom-icon"></i></button>
             </div> -->
